@@ -1,0 +1,23 @@
+C++ requires that all variables have a specified data type when they are initialized. The language is statically typed, meaning that the data type of all variables is known before it is compiled. The type constraints are loosely enforced, so variables can be implicitly converted or reinterpreted as other data types, meaning that the language is weakly typed. Additionally, variables in C++ are mutable, allowing the data of a variable to be changed in its place in memory after it has already been created.
+Similar to Java, the scope of a variable depends on where they have been initialized, or if they are global variables or local variables. Global variable throughout the code, whereas local variables are not accessible or even visible outside of the code block they were created in. Local variables are stored on the stack and completely destroyed when they become out of scope, however dynamically allocated variables are stored on the heap and must be manually deleted.
+
+Primitive data types:
+Integers (2 or 4 bytes)
+Floats (4 bytes)
+Double (8 bytes)
+Char (1 byte)
+Bool (1 byte)
+
+Non-primative data types:
+Strings
+Arrays
+Pointers
+
+Naming Conventions:
+	C++ does not officially enforce variable naming conventions, both of the two major naming conventions (CamelCase and Snake_case) are acceptable. However, similar to most other languages, C++ does have reserve words. These are specific words that are pre-allocated to certain functions within the language and cannot be used as identifiers. Some of these words include int, class, const, static, as well as many others. C++ 26 has approximately 90 of these reserved words.
+
+https://www.geeksforgeeks.org/cpp/cpp-data-types/
+https://www.w3schools.com/cpp/cpp_arrays.asp 
+https://www.geeksforgeeks.org/cpp/naming-convention-in-c/ 
+https://en.cppreference.com/cpp/language/types 
+https://en.cppreference.com/cpp/language/bool_literal 
