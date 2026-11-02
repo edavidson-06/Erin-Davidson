@@ -39,12 +39,12 @@ Code blocks under selection control statements are delimited through the use of 
 Short Circuiting:
 Short circuiting when evaluating logical expressions saves computation time by not continuing to evaluate a multi-conditional statement once the statement is known to resolve to false. C++ does support short circuiting.
     
-if (z < 0 && x / 0 == 5){		 // cannot divide by 0, should throw error if it does not short circuit
-    cout << "no short-circuit \n";
-}
-else { 
-	cout << "yay short circuit! \n"; 
-}
+	if (z < 0 && x / 0 == 5){		 // cannot divide by 0, should throw error if it does not short circuit
+    	cout << "no short-circuit \n";
+	}
+	else { 
+		cout << "yay short circuit! \n"; 
+	}
 
 
 
