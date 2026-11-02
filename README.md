@@ -20,7 +20,7 @@ https://www.w3schools.com/cpp/cpp_conditions.asp
 Code blocks under conditions in selection control statements?
 Code blocks under selection control statements are delimited through the use of indentations and  curly braces {}following the conditional statement.The use of curly braces is not strictly enforced by the compiler, if they are not used only the very next line will be executed.
 
- //The following statements are executed identically
+ 	//The following statements are executed identically
    
     if (a)
         cout << "true!! \n";
