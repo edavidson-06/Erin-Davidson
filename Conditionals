@@ -1,0 +1,60 @@
+#include <string>
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int x = 5;
+    int y = 10;
+    int z = 36;
+    bool a = true;
+
+        //one-condition if/else statement
+    if (a){
+        cout << "true!! \n";
+    }
+
+
+        //multi-condition statement
+    if (z > x && y != 12 ){
+        cout << "both conditions are true! \n";
+    }
+
+
+        //if/elif/else statements
+    if(z < y){
+        cout << "if: z is less than y \n";
+    }
+    else if (x != y){
+        cout << "else if: x does not equal y \n";
+    }
+    else{
+        cout <<"... else... \n";
+    } // outputs else if statement
+
+
+        //short-circuit logic
+    if (z < 0 && x / 0 == 5){ // cannot divide by 0, should throw error if it does not short circuit
+        cout << "no short-circuit \n";
+    }
+    else { cout << "yay short circuit! \n"; } 
+
+
+        //switch case statement
+    switch(x){
+        case 3:
+            cout << "switch x equals 3?? \n";
+            break;
+        case 4:
+            cout << "switch x equals 4.. \n";
+            break;
+        case 5:
+            cout << " yippee! switch x equals 5!! \n";
+            break;
+        case 6:
+            cout << "not case 6. \n";
+            break;
+    } // outputs "yippee!..." (case 5)
+
+    return 0;
+}
