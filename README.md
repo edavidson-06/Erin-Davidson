@@ -13,12 +13,13 @@ Booleans are 1 bit primitive data types holding a value of either “true” or 
 https://dev.to/srsoumyax11/a-boolean-is-a-bit-so-why-does-it-take-a-byte-1nm9 
 https://james-william-fletcher.medium.com/8-bools-in-1-byte-the-1-bit-boolean-cf6754b93230 
 
-Conditional statements:
+	Conditional statements:
 C++ supports comparison conditions (< , >, <=, >=, <==, !=) which may be used in conjunction with conditional statements. Conditional statements lead to different code blocks to be performed based on if the statement within it resolves to true or false. Similar to most other languages, C++ supports if, else, if else (acts the same as elif in python), and switch statements.
 https://www.w3schools.com/cpp/cpp_conditions.asp 
 
 Code blocks under conditions in selection control statements?
 Code blocks under selection control statements are delimited through the use of indentations and  curly braces {}following the conditional statement.The use of curly braces is not strictly enforced by the compiler, if they are not used only the very next line will be executed.
+
  //The following statements are executed identically
    
     if (a)
@@ -38,10 +39,12 @@ Code blocks under selection control statements are delimited through the use of 
 Short Circuiting:
 Short circuiting when evaluating logical expressions saves computation time by not continuing to evaluate a multi-conditional statement once the statement is known to resolve to false. C++ does support short circuiting.
     
-if (z < 0 && x / 0 == 5){ // cannot divide by 0, should throw error if it does not short circuit
-        cout << "no short-circuit \n";
-    }
-    else { cout << "yay short circuit! \n"; }
+if (z < 0 && x / 0 == 5){		 // cannot divide by 0, should throw error if it does not short circuit
+    cout << "no short-circuit \n";
+}
+else { 
+	cout << "yay short circuit! \n"; 
+}
 
 
 
