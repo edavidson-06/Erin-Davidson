@@ -50,7 +50,7 @@ Short circuiting when evaluating logical expressions saves computation time by n
 
 
 
-INCOMPLETE { Syntax for declaring a function:
+Syntax for declaring a function:
 The syntax for declaring a function is very similar to that of java. In C++ the syntax is as follows:
 
 returnType functionName( parameterType param1, parameterType param2){
@@ -68,8 +68,18 @@ Technically, multiple values cannot be returned from a function, however to get 
 https://www.geeksforgeeks.org/c/how-to-return-multiple-values-from-a-function-in-c-or-cpp/ 
 https://www.fluentcpp.com/2021/07/09/how-to-return-several-values-from-a-function-in-c/ 
 
-Data is passed by value, however a value can be explicitly passed by reference by using & on a variable. Passing by value does alter the original value, whereas passing by value does not. Passing by value is very useful to alter arguments.
-}
+Data is passed by value, however a value can be explicitly passed by reference by using & on a variable by creating a reference variable to the memory address. Passing by value does alter the original value, whereas passing by value does not. Passing by reference is very useful to alter arguments as it passes the address of the value within a variable as opposed to a copy of the value.
+https://www.geeksforgeeks.org/cpp/parameter-passing-techniques-in-cpp/ 
+https://codeforces.com/blog/entry/111259 
+
+local variables, parameters, and arguments are all stored on the stack unless dynamically allocated to the heap. 
+Within local scope or block scope a variable is declared within a function or block and is only visible there. The variable is destroyed from memory once it reaches the end of the block that it was declared in. If a variable is manually allocated to the heap using ‘new’  or ‘malloc’ it must also be manually destroyed from the heap by calling ‘delete’ to free the memory.
+
+https://learn.microsoft.com/en-us/cpp/cpp/scope-visual-cpp?view=msvc-170 
+https://aerospike.com/blog/understanding-garbage-collection/ 
+
+
+
 
 
 Switch statements, is “break” used to get out, can “continue” be used to have all the conditions evaluated
